@@ -1,7 +1,7 @@
 
 <center>
 
-[![Vutaweb.Vn]('http://vutaweb.com/template/default/images/logo.png')](https://vutaweb.vn)
+[![Vutaweb.Vn](http://vutaweb.com/template/default/images/logo.png)](https://vutaweb.vn)
 
 </center>
 
