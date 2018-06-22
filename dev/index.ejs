@@ -1,0 +1,43 @@
+<%- include('./layout/header') %>
+    <%- include('./components/navbar') %>
+        <main>
+            <%- include('./components/sologan.ejs') %>
+                <%- include('./components/networks.ejs') %>
+                    <%- include('./components/about-index.ejs') %>
+                        <%- include('./components/service-index.ejs') %>
+                            <%- include('./components/comment-index.ejs') %>
+                                <section class="bg-white desk-md-full">
+                                    <div class="container py-md-5 py-3">
+                                        <div class="row">
+                                            <div class="col-md-8 offset-md-2 uk-text-center">
+                                                <h2 class="uk-heading-line uk-text-bold text-dark mb-1">
+                                                    <span>Sự Kiện Truyền Thông</span>
+                                                </h2>
+                                                <h4 class="text-dark mt-2 mb-0">
+                                                    BÁO CHÍ NÓI VỀ CHÚNG TÔI
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="row py-md-5 py-3">
+                                            <% for(let i = 1; i < 4; i++) { %>
+                                                <div class="col-md-4 my-2">
+                                                    <div class="uk-card uk-card-default uk-box-shadow-large uk-box-shadow-hover-xlarge  bg-white">
+                                                        <div class="uk-card-media-top">
+                                                            <img alt="" data-src="/dist/images/baochi-<%=i%>.jpeg" uk-img>
+                                                        </div>
+                                                        <div class="uk-card-body">
+                                                            <a class="uk-h4 uk-text-bold" href="">
+                                                                VUTAWEB - NÂNG TẦM THƯƠNG HIỆU CHO DOANH NGHIỆP VIỆT
+                                                            </a>
+                                                            <p>
+                                                                <i class="fa fa-link mr-1"></i><span>truyenthongphattrien.org</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <% } %>
+                                        </div>
+                                    </div>
+                                </section>
+        </main>
+                                <%- include('./layout/footer') %>

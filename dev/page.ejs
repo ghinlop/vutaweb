@@ -1,0 +1,82 @@
+<%- include('./layout/header') %>
+    <%- include('./components/navbar') %>
+        <main>
+            <div class="bg-header pt-md-5 pt-3">
+                <div class="container pt-md-5 pt-3 px-0">
+                    <div class="bg-light border-bottom header-page">
+                        <h1 class="title-page dark pt-md-5 pt-3">
+                            <span class="uk-heading-bullet">
+                                Beautiful Place for your Great Journey
+                            </span>
+                        </h1>
+                        <ul class="uk-breadcrumb">
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Active</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-light py-3">
+                <div class="detail-page border border-muted bg-white p-3 uk-box-shadow-hover-large">
+                    <div class="d-block px-3">
+                        <div class="d-block px-3">
+                            <div class="row align-items-center text-muted border-bottom pb-3 mb-3">
+                                <div class="col-md-6 col-5 px-md-3 pr-0">
+                                    <i class="fa fa-calendar mr-2"></i>
+                                    <small>22/6/2018</small>
+                                </div>
+                                <div class="col-md-6 col-7 text-right">
+                                    <div class="d-inline-block mr-2">
+                                        <i class="fa fa-eye mr-2"></i>
+                                        <small>2222</small>
+                                    </div>
+                                    <div class="d-inline-block">
+                                        <i class="fa fa-comment mr-2"></i>
+                                        <small>22</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex arvel theme
+                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etdoloreasdes
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodalo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit</p>
+                        <p>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                            amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                        <p class="blog-2-line-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodalo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla
+                        </p>
+                        <p class="speak-quate">Excepteur sint occaecat cupidatat non proident, sunt culpa quite deserunt enal mollit anim id estambul
+                            ilaborum. Sed ultra practice omnis iste natus error unexpected site</p>
+                        <p>Lanventore veritatis et quasi architecto beatae vitae dicta sutnt explicabo. Nemo enim ipsam voluptatem
+                            quiav luptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui emdamet.</p>
+                    </div>
+                    <div class="d-block border-top py-3">
+                        <% for(let i = 1; i <  7; i++) { %>
+                            <a href="./news.html">
+                                <small class="btn btn-outline-secondary btn-sm mr-1 mb-1">tin tức</small>
+                            </a>
+                            <% } %>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer') %>

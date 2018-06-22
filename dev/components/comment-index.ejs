@@ -1,0 +1,55 @@
+<section class="desk-md-full comment-index py-md-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 uk-text-center">
+                    <h2 class="uk-heading-line uk-text-bold text-light mb-1">
+                        <span>Khách Hàng</span>
+                    </h2>
+                    <h4 class="text-light mt-2 mb-0">Hài Lòng của khách hàng là Nổ Lực của chúng tôi</h4>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-8 offset-md-2">
+                    <div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: slide; min-height: 300; min-height: 400; velocity: .2; autoplay: true; autoplay-interval: 3000;">
+                        <ul class="uk-slideshow-items">
+                            <% for(let i = 1; i < 5; i++) { %>
+                                <li class="p-3">
+                                    <div class="uk-box-shadow-large text-white">
+                                        <div class="header px-3 py-md-5 py-3">
+                                            Tôi thật sử cảm thấy rất hài lòng với những dịch vụ mà VUTAWEB mang lại, tôi có tham khảo qua rất nhiều đơn vị thiết kế website,
+                                            nhưng chọn lựa cuối cùng của tôi vẫn là VUTAWEB. Chúc
+                                            VUTAWEB phát triển thành công hơn nữa
+                                        </div>
+                                        <div class="footer p-3 bg-light text-secondary">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-3 d-md-block d-none">
+                                                    <div class="rounded-circle avatar d-inline-block">
+                                                        <img src="" alt="" data-src="/dist/images/avatar-<%=i%>.jpg" uk-img="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 text-ilatic uk-text-bold">
+                                                    <h3>Heather Payne</h3>
+                                                    <p class="uk-text-small">CEO of HackerYou • Founder of Ladies Learning
+                                                        Code
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <%} %>
+                        </ul>
+                        <div class="uk-slidenav-container d-md-block d-none">
+                            <a class="text-white uk-position-center-left-out uk-position-small uk-slidenav-large" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="text-white uk-position-center-right-out uk-position-small uk-slidenav-large" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                        </div>
+                        <div class="uk-slidenav-container d-md-none">
+                            <a class="text-white uk-position-center-left uk-position-small uk-slidenav-large" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="text-white uk-position-center-right uk-position-small uk-slidenav-large" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

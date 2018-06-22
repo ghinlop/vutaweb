@@ -1,0 +1,98 @@
+<%- include('./layout/header') %>
+    <%- include('./components/navbar') %>
+        <main>
+            <div class="bg-header pt-md-5 pt-3">
+                <div class="container pt-md-5 pt-3 px-0">
+                    <div class="bg-light border-bottom header-page">
+                        <h1 class="title-page dark pt-md-5 pt-3">
+                            <span class="uk-heading-bullet">
+                                Tin Tức
+                            </span>
+                        </h1>
+                        <ul class="uk-breadcrumb">
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Active</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-light">
+                <div class="row">
+                    <div class="col-md-8 py-3">
+                        <div class="row">
+                            <% for(let i = 1; i <  7; i++) { %>
+                                <div class="col-md-6 mb-3">
+                                    <div class="uk-card uk-card-default news uk-box-shadow-medium uk-box-shadow-hover-large">
+                                        <div class="uk-card-media-top">
+                                            <img data-src="/dist/images/news-<%=i%>.jpg" alt="" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <a href="./detail.html" class=" uk-h3 uk-card-title my-0">Beautiful Place for your Great Journey</a>
+                                            <div class="row text-muted align-items-center">
+                                                <div class="col-6 uk-text-small">
+                                                    <i class="fa fa-calendar mr-2"></i>
+                                                    <span>22/6/2018</span>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <i class="fa fa-comment mr-2"></i>
+                                                    <span>22</span>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% } %>
+                        </div>
+                        <div class="d-block py-3">
+                            <ul class="uk-pagination uk-flex-center" uk-margin>
+                                <li>
+                                    <a href="#">
+                                        <span uk-pagination-previous></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="uk-disabled">
+                                    <span>...</span>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+                                <li class="uk-active">
+                                    <span>7</span>
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span uk-pagination-next></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <%- include('./components/widget') %>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer') %>
