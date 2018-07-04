@@ -1,0 +1,10 @@
+{
+  "name": "vutaweb",
+  "version": "2.0.0",
+  "description": "Vutaweb Template",
+  "main": "index.js",
+  "repository": "https://github.com/ghinlop/vutaweb.git",
+  "author": "Ghin Lop <ghinlop@gmail.com>",
+  "license": "MIT",
+  "eng": "ejs"
+}
