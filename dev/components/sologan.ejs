@@ -9,11 +9,141 @@
                 <p class="text-white mont mb-5">
                     chỉ bằng một website chuyên nghiệp. Chúng tôi luôn sẵn sàng tư vấn và hỗ trợ bạn bất cứ khi nào bạn cần.
                 </p>
-                <a href="tel:02546275555" class="header-phone align-items-center position-relative">
-                    <i uk-icon="icon: receiver; ratio: 1.5"></i>
-                    <span>Gọi ngay: 0254 627 5555</span>
+                <a href="#register-modal-step-1" class="header-phone align-items-center position-relative text-uppercase" uk-toggle>
+                    <span>Đăng ký ngay</span>
+                    <i uk-icon="icon: pencil; ratio: 1.5"></i>
                 </a>
             </div>
         </div>
     </div>
+
+    <form action="">
+        <div id="register-modal-step-1" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-margin-auto-vertical">
+
+                <div class="uk-modal-header bg-primary position-relative">
+                    <button class="uk-position-small uk-position-center-right" type="button" uk-close></button>
+                    <h2 class="uk-modal-title text-white mt-0">
+                        Bước 1 - Đăng ký tên miền
+                    </h2>
+                </div>
+                <div class="uk-modal-body">
+                    <div class="form-group">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <label for="subdomain">Subdomain: </label>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="d-block">
+                                    <div class="uk-inline w-100">
+                                        <input id="subdomain" type="text" class="uk-input d-block" name="subdomain" placeholder="Tên miền của bạn">
+                                        <span class="uk-form-icon uk-form-icon-flip w-100 mr-2 text-right custom-input-form-right uk-text-bold text-primary">
+                                            .vutaweb.com
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer text-right">
+                    <a href="#register-modal-step-2" class="uk-button uk-button-primary text-uppercase" uk-toggle>
+                        Tiếp theo
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="register-modal-step-2" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-margin-auto-vertical">
+                <div class="uk-modal-header bg-primary position-relative">
+                    <button class="uk-position-small uk-position-center-right" type="button" uk-close></button>
+                    <h2 class="uk-modal-title text-white mt-0">
+                        Bước 2 - Thông tin tài khoản
+                    </h2>
+                </div>
+                <div class="uk-modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="username">Tên đăng nhập</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input id="username" name="username" type="text" class="uk-input d-block" placeholder="Tên đăng nhập">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="password">Mật khẩu</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input id="password" name="password" type="password" class="uk-input d-block" placeholder="Mật khẩu đăng nhập tài khoản">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input id="email" name="email" type="email" class="uk-input d-block" placeholder="Tài khoản email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-modal-footer text-right">
+                    <a href="#register-modal-step-1" class="uk-button text-uppercase" uk-toggle>
+                        Quay lại
+                    </a>
+                    <a href="#register-modal-step-3" class="uk-button uk-button-primary text-uppercase" uk-toggle>
+                        Tiếp theo
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="register-modal-step-3" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-margin-auto-vertical">
+                <div class="uk-modal-header bg-primary position-relative">
+                    <button class="uk-position-small uk-position-center-right" type="button" uk-close></button>
+                    <h2 class="uk-modal-title text-white mt-0">
+                        Bước 3 - Thông tin liên
+                    </h2>
+                </div>
+                <div class="uk-modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="fullname">Họ Tên</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input id="fullname" name="fullname" type="text" class="uk-input d-block" placeholder="Họ và tên của bạn">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="phone">Số điện thoại</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input id="phone" name="phone" type="number" class="uk-input d-block" placeholder="Số điện thoại liên hệ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <textarea name="address" id="address" cols="10" rows="5" class="uk-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="uk-modal-footer text-right">
+                    <a href="#register-modal-step-2" class="uk-button text-uppercase">
+                        Quay lại
+                    </a>
+                    <button class="uk-button btn-success text-white">Tạo Website</button>
+                </div>
+            </div>
+        </div>
+    </form>
 </section>

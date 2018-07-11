@@ -7,6 +7,10 @@
 # VutaWeb Template
 Template build by EJS Template Engine Frameword & Compiler by Gulp
 
+## Verison 2.0.1
+- Change Cover Index
+    - Call Modal Step
+    - Change CSS with new class **.custom-input-form-right**
 
 ## Verison 2.0.0
 ### Changelog
