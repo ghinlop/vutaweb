@@ -7,6 +7,10 @@
 # VutaWeb Template
 Template build by EJS Template Engine Frameword & Compiler by Gulp
 
+## Verison 2.0.4
+- Fix class flex-md-1 min-width: 769px
+- Fix Menu reponsize in Mobile, Tablet, Desktop
+
 ## Verison 2.0.3
 - Fix z-index Navbar off-canvas for screen min-width: 768px
 - Unset effect ::before and ::after for "a" tag for screen min-width: 768px

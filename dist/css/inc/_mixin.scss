@@ -272,8 +272,8 @@ $nocolor: transparent;
         @content;
     }
 }
-@mixin table($w: 960px) {
-    @media screen and (min-width: $w) {
+@mixin table($min-w: 851px, $max-w: 960px) {
+    @media screen and (min-width: $min-w) and (max-width: $max-w) {
         @content;
     }
 }

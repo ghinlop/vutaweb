@@ -58,21 +58,6 @@ img{
 
 @include checkbox(#0088ff);
 // #endregion
-@include table{
-    .nodesk{
-        .uk-offcanvas{
-            position: static!important;
-            display: block;
-        }
-        .uk-offcanvas-bar{
-            position: static;
-            width: 100%;
-            background-color: $nocolor;
-            padding: 0;
-            @include transform(unset);
-        }
-    }
-}
 @include md{
     .flex-md-1{
         flex: 1;

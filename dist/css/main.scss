@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Roboto');
-@import './_resource/inc/_mixin.scss';
-@import './_resource/inc/_var.scss';
-@import './_resource/inc/_global.scss';
+@import './inc/_mixin.scss';
+@import './inc/_var.scss';
+@import './inc/_global.scss';
 $roboto: 'Roboto', sans-serif;
 $montserrat: 'Montserrat Alternates', sans-serif;
 
@@ -532,9 +532,12 @@ footer{
 // #endregion
 
 @include table{
-    nav .navbar li > a{
-        font-size: 90%;
-        padding: 8px 5px;
+    nav .navbar{
+        margin-top: 0;
+        li > a{
+            font-size: 90%;
+            padding: 8px 5px;
+        }
     }
 }
 
