@@ -720,7 +720,14 @@ footer ul > li {
   .uk-modal-title {
     font-size: 90%; }
   .uk-offcanvas-bar {
-    padding: 10px 0; }
+    padding: 10px 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 9999; }
+  nav .navbar li > a::before, nav .navbar li > a::after {
+    content: unset; }
+  nav .navbar li > a:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
   .sologan {
     padding: 15px 10px;
     background-size: auto;

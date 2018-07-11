@@ -7,6 +7,11 @@
 # VutaWeb Template
 Template build by EJS Template Engine Frameword & Compiler by Gulp
 
+## Verison 2.0.3
+- Fix z-index Navbar off-canvas for screen min-width: 768px
+- Unset effect ::before and ::after for "a" tag for screen min-width: 768px
+- Update main.css, main.scss 
+
 ## Verison 2.0.2
 - Fix break Navbar for screen width 960px
 - Fix close button modal dont work
