@@ -172,11 +172,17 @@ nav{
             border: 1px solid #eee;
             padding: 0;
             overflow: hidden;
-            li > a{
-                display: block;
-                padding: 8px 15px;
-                @include txt-color(#333, #fff);
-                @include bg-color($nocolor, $color-1);
+            li {
+                margin-right: 0;
+                > a{
+                    display: block;
+                    padding: 8px 15px;
+                    @include txt-color(#333, #fff);
+                    @include bg-color($nocolor, $color-1);
+                    &::before, &::after{
+                        content: unset;
+                    }
+                }
             }
         }
     }
@@ -419,7 +425,10 @@ nav{
 // #endregion
 
 .custom-input-form-right{
-    justify-content: right;
+    top: 50%;
+    right: 10px;
+    position: absolute;
+    @include transform(translateY(-50%));
 }
 
 // #region Footer
@@ -522,7 +531,12 @@ footer{
 
 // #endregion
 
-
+@include table{
+    nav .navbar li > a{
+        font-size: 90%;
+        padding: 8px 5px;
+    }
+}
 
 @include sm{
     .speak-quate{
@@ -543,6 +557,12 @@ footer{
         a{
             font-size: 80%;
         }
+    }
+    .custom-input-form-right{
+        font-size: 70%;
+    }
+    .uk-modal-title{
+        font-size: 90%;
     }
     .uk-offcanvas-bar{
         padding: 10px 0;

@@ -322,15 +322,19 @@ nav .navbar .uk-dropdown {
   border: 1px solid #eee;
   padding: 0;
   overflow: hidden; }
-  nav .navbar .uk-dropdown li > a {
-    display: block;
-    padding: 8px 15px;
-    color: #333;
-    background-color: transparent; }
-    nav .navbar .uk-dropdown li > a:hover {
-      color: #fff; }
-    nav .navbar .uk-dropdown li > a:hover {
-      background-color: #0fb7f9; }
+  nav .navbar .uk-dropdown li {
+    margin-right: 0; }
+    nav .navbar .uk-dropdown li > a {
+      display: block;
+      padding: 8px 15px;
+      color: #333;
+      background-color: transparent; }
+      nav .navbar .uk-dropdown li > a:hover {
+        color: #fff; }
+      nav .navbar .uk-dropdown li > a:hover {
+        background-color: #0fb7f9; }
+      nav .navbar .uk-dropdown li > a::before, nav .navbar .uk-dropdown li > a::after {
+        content: unset; }
 
 .sologan img {
   max-width: 300px;
@@ -525,7 +529,14 @@ nav .navbar .uk-dropdown {
       background-color: tomato; }
 
 .custom-input-form-right {
-  justify-content: right; }
+  top: 50%;
+  right: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
 
 footer ul > li {
   color: #ddd; }
@@ -684,6 +695,11 @@ footer ul > li {
     .price-box.price-red .footer:hover {
       background-color: #e74c3c; }
 
+@media screen and (min-width: 960px) {
+  nav .navbar li > a {
+    font-size: 90%;
+    padding: 8px 5px; } }
+
 @media screen and (max-width: 768px) {
   .speak-quate {
     margin: 0; }
@@ -699,6 +715,10 @@ footer ul > li {
     overflow-y: scroll; }
     nav .navbar .uk-dropdown a {
       font-size: 80%; }
+  .custom-input-form-right {
+    font-size: 70%; }
+  .uk-modal-title {
+    font-size: 90%; }
   .uk-offcanvas-bar {
     padding: 10px 0; }
   .sologan {

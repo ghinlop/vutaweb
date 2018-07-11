@@ -1,5 +1,5 @@
 <section class="sologan bg-header py-md-5 desk-md-full before-bg">
-    <div class="container py-md-2">
+    <div class="uk-container py-md-2">
         <div class="row align-items-center">
             <div class="col-md-5 d-md-block d-none pl-0">
                 <img class="mt-5" data-src="/dist/images/smt.png" alt="" uk-img uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 200; duration: 2000">
@@ -22,7 +22,7 @@
             <div class="uk-modal-dialog uk-margin-auto-vertical">
 
                 <div class="uk-modal-header bg-primary position-relative">
-                    <button class="uk-position-small uk-position-center-right" type="button" uk-close></button>
+                    <button class="uk-position-small uk-position-center-right uk-modal-close-default" type="button" uk-close></button>
                     <h2 class="uk-modal-title text-white mt-0">
                         Bước 1 - Đăng ký tên miền
                     </h2>
@@ -35,9 +35,9 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="d-block">
-                                    <div class="uk-inline w-100">
+                                    <div class="uk-block w-100 position-relative">
                                         <input id="subdomain" type="text" class="uk-input d-block" name="subdomain" placeholder="Tên miền của bạn">
-                                        <span class="uk-form-icon uk-form-icon-flip w-100 mr-2 text-right custom-input-form-right uk-text-bold text-primary">
+                                        <span class="custom-input-form-right uk-text-bold text-primary">
                                             .vutaweb.com
                                         </span>
                                     </div>
@@ -56,7 +56,7 @@
         <div id="register-modal-step-2" class="uk-flex-top" uk-modal>
             <div class="uk-modal-dialog uk-margin-auto-vertical">
                 <div class="uk-modal-header bg-primary position-relative">
-                    <button class="uk-position-small uk-position-center-right" type="button" uk-close></button>
+                    <button class="uk-position-small uk-position-center-right uk-modal-close-default" type="button" uk-close></button>
                     <h2 class="uk-modal-title text-white mt-0">
                         Bước 2 - Thông tin tài khoản
                     </h2>
@@ -106,7 +106,7 @@
         <div id="register-modal-step-3" class="uk-flex-top" uk-modal>
             <div class="uk-modal-dialog uk-margin-auto-vertical">
                 <div class="uk-modal-header bg-primary position-relative">
-                    <button class="uk-position-small uk-position-center-right" type="button" uk-close></button>
+                    <button class="uk-position-small uk-position-center-right uk-modal-close-default" type="button" uk-close></button>
                     <h2 class="uk-modal-title text-white mt-0">
                         Bước 3 - Thông tin liên
                     </h2>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 <div class="uk-modal-footer text-right">
-                    <a href="#register-modal-step-2" class="uk-button text-uppercase">
+                    <a href="#register-modal-step-2" class="uk-button text-uppercase" uk-toggle>
                         Quay lại
                     </a>
                     <button class="uk-button btn-success text-white">Tạo Website</button>

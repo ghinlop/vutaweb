@@ -1,4 +1,5 @@
 $color: #000;
+$nocolor: transparent;
 @mixin transform($type: false) {
     @if $type {
         transform: $type;
@@ -189,24 +190,89 @@ $color: #000;
 @mixin border-hf($hover: null, $focus: null){
     @if $hover{
         &:hover{
-            border-color: $hover;
+            border-color: $hover!important;
+            @content;
         }
     }
     @if $focus{
         &:focus{
-            border-color: $focus;
+            border-color: $focus!important;
+            @content;
         }
     }
-    @content;
 }
 
+@mixin priceBox($n: null, $c: null, $h: null, $t: #fff){
+    @if $n and $c and $h {
+        &.#{$n}{
+            .header{
+                background-color: $c;
+                .price, .price-top{
+                    color: $c;
+                    border-color: $c;
+                }
+            }
+            .header-sub{
+                background-color: $h;
+                color: $t;
+            }
+            .footer{
+                @include bg-color($c, $h);
+            }
+        }
+    }
+}
+@mixin arrow($pos: null, $width: null, $color: null){
+    @if $pos and $width and $color{
+        position: absolute;
+        @if $pos == 'top' {
+            border-top: 0 solid $nocolor;
+            border-bottom: $width solid $color;
+            border-left: $width solid $nocolor;
+            border-right: $width solid $nocolor;
+        }
+        @if $pos == 'bottom' {
+            border-bottom: 0 solid $nocolor;
+            border-top: $width solid $color;
+            border-left: $width solid $nocolor;
+            border-right: $width solid $nocolor;
+        }
+        @if $pos == 'left' {
+            border-top: $width solid $nocolor;
+            border-bottom: $width solid $nocolor;
+            border-left: 0 solid $nocolor;
+            border-right: $width solid $color;
+        }
+        @if $pos == 'right' {
+            border-top: $width solid $nocolor;
+            border-bottom: $width solid $nocolor;
+            border-left: $width solid $color;
+            border-right: 0 solid $nocolor;
+        }
+        @content;
+    }
+}
+@mixin uikit-alert-bg($name: null, $bg: null, $color: #fff){
+    @if $name and $bg{
+        .uk-notification-message-bg-#{$name}{
+            background-color: $bg!important;
+            color: $color!important;
+            @content;
+        }
+    }
+}
 @mixin sm($w: 768px) {
     @media screen and (max-width: $w) {
         @content;
     }
 }
 
-@mixin md($w: 769px) {
+@mixin md($min-w: 769px) {
+    @media screen and (min-width: $min-w) {
+        @content;
+    }
+}
+@mixin table($w: 960px) {
     @media screen and (min-width: $w) {
         @content;
     }
