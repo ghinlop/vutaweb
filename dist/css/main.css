@@ -736,6 +736,9 @@ footer ul > li {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+  .uk-container {
+    position: relative;
+    z-index: 1000; }
   .speak-quate {
     margin: 0; }
   header {
@@ -754,15 +757,24 @@ footer ul > li {
     font-size: 70%; }
   .uk-modal-title {
     font-size: 90%; }
+  .uk-offcanvas {
+    z-index: -1; }
+    .uk-offcanvas.uk-open {
+      z-index: 1000; }
+      .uk-offcanvas.uk-open .uk-offcanvas-bar {
+        z-index: 3000; }
   .uk-offcanvas-bar {
     padding: 10px 0;
     min-height: 100vh;
     position: relative;
-    z-index: 9999; }
+    z-index: -1; }
   nav .navbar li > a::before, nav .navbar li > a::after {
     content: unset; }
   nav .navbar li > a:hover {
     background-color: rgba(255, 255, 255, 0.2); }
+  .sologan, .comment-index {
+    z-index: 2000;
+    position: relative; }
   .sologan {
     padding: 15px 10px;
     background-size: auto;

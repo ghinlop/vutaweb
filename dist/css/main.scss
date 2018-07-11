@@ -542,6 +542,10 @@ footer{
 }
 
 @include sm{
+    .uk-container{
+        position: relative;
+        z-index: 1000;
+    }
     .speak-quate{
         margin: 0;
     }
@@ -567,11 +571,20 @@ footer{
     .uk-modal-title{
         font-size: 90%;
     }
+    .uk-offcanvas{
+        z-index: -1;
+        &.uk-open{
+            z-index: 1000;
+            .uk-offcanvas-bar{
+                z-index: 3000;
+            }
+        }
+    }
     .uk-offcanvas-bar{
         padding: 10px 0;
         min-height: 100vh;
         position: relative;
-        z-index: 9999;
+        z-index: -1;
     }
     
     nav .navbar li > a{
@@ -581,6 +594,10 @@ footer{
         &:hover{
             background-color: rgba($color: #fff, $alpha: 0.2);
         }
+    }
+    .sologan, .comment-index{
+        z-index: 2000;
+        position: relative;
     }
     .sologan{
         padding: 15px 10px;

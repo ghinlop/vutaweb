@@ -10,6 +10,7 @@ Template build by EJS Template Engine Frameword & Compiler by Gulp
 ## Verison 2.0.4
 - Fix class flex-md-1 min-width: 769px
 - Fix Menu reponsize in Mobile, Tablet, Desktop
+- Fix z-index in Mobile
 
 ## Verison 2.0.3
 - Fix z-index Navbar off-canvas for screen min-width: 768px
