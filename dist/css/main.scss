@@ -120,6 +120,7 @@ header{
 // #region Nav
 nav{
     .navbar{
+        margin-top: 0;
         li:not(:last-child){
             margin-right: 5px;
         }
@@ -540,18 +541,36 @@ footer{
         }
     }
 }
-
+@include md{
+    .logo{
+        position: static!important;
+    }
+}
 @include sm{
-    .uk-container{
+    .uk-sticky-fixed{
+        z-index: 1100;
+    }
+    section{
         position: relative;
         z-index: 1000;
     }
     .speak-quate{
         margin: 0;
     }
+    .uk-offcanvas-container{
+        .logo .uk-sticky-fixed{
+            position: static!important;
+        }
+    }
+    .logo .uk-sticky-fixed{
+        padding: 8px 15px;
+        img{
+            max-width: 120px;
+        }
+    }
     header{
         position: static;
-        .logo > img{
+        .logo img{
             width: 180px;
         }
     }
@@ -595,10 +614,10 @@ footer{
             background-color: rgba($color: #fff, $alpha: 0.2);
         }
     }
-    .sologan, .comment-index{
-        z-index: 2000;
-        position: relative;
-    }
+    // .sologan, .comment-index{
+    //     z-index: 2000;
+    //     position: relative;
+    // }
     .sologan{
         padding: 15px 10px;
         background-size: auto;

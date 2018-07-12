@@ -7,6 +7,47 @@
 # VutaWeb Template
 Template build by EJS Template Engine Frameword & Compiler by Gulp
 
+## Verison 2.0.5
+- Fixed Sticky menu for mobile screen
+- Update CSS fixed bug sticky menu
+
+*Before Fixed*
+```html
+<header class="header" uk-sticky="animation: uk-animation-slide-top; sel-target: .sologan; cls-active: header-fixed shadow; top: 20">
+    <div class="uk-container">
+        <div class="row align-items-center">
+            <a href="/" class="col-md-3 col-10 logo py-2 text-md-left text-center">
+                <img alt="" src="/dist/images/logo.png">
+            </a>
+            <div class="col-md-9 col-2 nodesk">
+                <a class="d-md-none" uk-toggle="target: nav" uk-icon="icon: grid; ratio: 1.5"></a>
+                <nav class="d-block" uk-offcanvas="mode: push; overlay: true">
+<div class="uk-offcanvas-bar">
+```
+
+*After Fixed*
+```html
+<header class="header" uk-sticky="media: 769; animation: uk-animation-slide-top; sel-target: .sologan; cls-active: header-fixed shadow; top: 20">
+    <div class="uk-container">
+        <div class="row align-items-center">
+            <div class="col-md-3 logo py-2 px-md-3 px-0">
+                <div
+                uk-sticky="
+                top: 20; 
+                animation: uk-animation-slide-top; 
+                cls-active: bg-white;
+                width-element: true">
+                    <a href="/">
+                        <img alt="" src="/dist/images/logo.png">
+                    </a>
+                    <a class="d-md-none uk-position-small uk-position-center-right" uk-toggle="target: nav" uk-icon="icon: grid; ratio: 1.5"></a>
+                </div>
+            </div>
+            <div class="col-md-9 col-2 nodesk">
+                <nav class="d-block" uk-offcanvas="mode: push; overlay: true">
+                    <div class="uk-offcanvas-bar">
+```
+
 ## Verison 2.0.4
 - Fix class flex-md-1 min-width: 769px
 - Fix Menu reponsize in Mobile, Tablet, Desktop
